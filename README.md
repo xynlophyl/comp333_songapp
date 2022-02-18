@@ -1,4 +1,4 @@
-# COMP333 Song Rating App Landing Page*
+# COMP333 Song Rating App Landing Page
 
 ### Nelson Lin, Wesleyan University, Class of 2023
 
