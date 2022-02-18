@@ -1,189 +1,227 @@
-/* id styles, class attr styles */
-/* 
-    COMP 333: Software Engineering
-    Sebastian Zimmeck (szimmeck@wesleyan.edu)
-*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-/* 
-    It is a good idea to include all styles in a separate Style Sheet such as 
-    this one.
-
-    Start styling with the general elements of your page, e.g., body style, 
-    pargraph style, ... . Then, you can modify those styles for individual 
-    instances using class tags, id tags, ... .
-*/
-
-/* 
-    You can import a font from Google at https://fonts.google.com/
-*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
-
-/* 
-    The imported font should be applied to all body text.
-*/
 body {
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
+    background-color: ghostwhite;
+    margin: 0 0;
+    /* overflow: ; */
+    font-size: 12px;
 }
 
-/* 
-    All text in paragraphs should be blue.
-*/
-p {
-    color:blue;
+/* scaffold: create center alignment for all elements */
+
+scaffold {
+    display: flex;
+    justify-content: center;
+    padding: 10vh, 10vw;
 }
 
-/* 
-    The background of all divs should be pink.
- */
-div {
-    background-color: hotpink;
+section {
+    width: 80vw;
+    height: auto;
 }
 
-/* 
-    There is one white-div in our html_sample.html, which should have white 
-    font. 
-    
-    You can refer in Style Sheets to ids using #.
-*/
-#white-div {
-    color: white;
-}
-
-/* 
-    You can refer in Style Sheets to classes using the dot .
-*/
-.padding-color-class {
-    /* 
-        Instead of color names you can also use hexdecimal values. The lower the
-        number, the darker.
-    */
-    background-color: #000000;
-    /* 
-        You can also give colors in RGB values (0 to 255). If you are expecting 
-        older browsers using your site, refrain from using RGB formatting.
-    */
-    color: rgb(100, 168, 200);
-}
-
-.background-image-class {
-    background-image: url(https://placeimg.com/400/200/any); background-repeat: no-repeat;
-    color: white;
-}
-
-.css-box-model-class {
-    /* 
-        Demonstrates the CSS Box Model
-    */
-    border-width: 2px;
-    /* 
-        In order to see the border, you will need a border style.
-     */
-    border-style: solid;
-    /* 
-        You can add a margin to all four borders. If there is only one value, 
-        all borders are affected You can specify in clockwise order: 
-        top, right, bottom, left.
-    */
-    margin: 10px 5px 15px 25px;
-    /* 
-        While margins are at the outside of the border, paddings are at the 
-        inside. You can specify a single value for all four margins, but you 
-        could also specify the padding individually the as for the margins.
-    */
-    padding: 50px;
-}
-
-/* 
-    Links can be styled with CSS as well. There are four states: 
-    link (original state), visited, hover, active (on click).
-    For example, on hover, change the link color to green. Also, hover can be 
-    applied to divs.
-*/
-a:hover {
-    color:green;
-}
-
-/* 
-    For your custom navbar, you can specify the unorderd list style.
-*/
-.navbar ul {
-    /* 
-        Remove bullet points.
-    */
-    list-style: none;
-    width: 500px;
-    margin: 0 auto;
-    /* 
-        No padding.
-    */
-    padding: 0;
-    /* 
-        For navbars use background color that stands out.
-    */
-    background-color: black;
+h1 {
+    color: black;
+    font-size: 4rem;
+    padding-top: 5vh;
+    padding-bottom: 0;
     text-align: center;
+    
+}
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight:bold;
 }
 
-/*  
-    Style individual list items.
-*/
+img#sm {
+    width: 4vw;
+    /* border: 1px black; */
+}
+
+p {
+    /* color:blue; */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+div {
+    background-color: white;
+
+}
+
+/* navbar: */
+.navbar {
+    display:flex;
+    justify-content: flex-end;
+    height: auto;
+    width: 100%;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    /* border-bottom: 2px solid midnightblue; */
+    opacity: 97%;
+    background-color: powderblue;
+}
+.navbar:hover{
+    opacity: 100%;
+    transform: 0.6s;
+}
+
+.navbar ul{
+    list-style: none;
+    padding:15px 15px;
+    margin: 0 0;
+    width:100%;
+    /* border: 1px dashed red; */
+}
+
 .navbar li {
-    width: 150 px;
-    background-color: #000;
-    border: 1px solid red;
-    /* 
-        Show the navbar elements next to each other instead of on top of each 
-        other. 
-    */
-    padding: 10px;
-    display: inline-block;
+    text-align: center;
+    width: auto;
+    /* padding: 10px; */
+    display:inline-block;
     line-height: 40px;
+    /* border: 1px dashed blue; */
+    padding: 1vw;
 }
 
-/* 
-    Style links in navbar.
-*/
 .navbar a {
-    color:#fff;
+    text-align: center;
+    color: grey;
     text-decoration: none;
+    transition: 0.6s;
+    font-size: 1.2rem;
 }
 
-table, td {
-    border: 1px solid gray;
+.navbar a:hover {
+    color:black;
+    text-decoration: underline;
 }
 
-input {
-    /* 
-        Show different input on top of each other instead of next to each other.
-    */
-    display: block;
+.navbar img {
+    width: 55px;
+    height: 55px;
+    /* padding-left: ; */
+    /* padding-top: 2px; */
+    /* border: 1px dashed green; */
 }
 
-/* 
-    Style iframes.
-*/
+/* flex container:  */
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    align-self:center;
+    width: 100%;
+    height: auto;
+    /* flex-wrap: wrap; */
+    background-color: inherit;
+    /* border: 1px dashed darkgreen; */
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+#faqcontainer {
+    height: auto;
+    /* padding: 2vh 2vw; */
+    align-items: flex-start;
+}
+
+#faq {
+    height: 50vh;
+}
+
+table {
+    padding: 2vh 2vh;
+    /* border: 1px solid black; */
+}
+
+/* .flexcontainer#faq table{
+    width: 40%;
+} */
+
+table tr {
+    /* border: 1px solid red;  */
+    flex-wrap:wrap;
+}
+
+table tr th {
+    /* border: 1px solid red; */
+    font-size: 1.2rem;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+table tr td {
+    /* border: 1px solid blue; */
+    text-align:center;
+    height:auto;
+    font-size: 1rem;
+    width: 30%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+table ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0 0;
+    width: 100%;
+    /* border: 1px dashed red; */
+    padding: 0 0 0 0;
+}
+
+/* iframe:  */
 iframe {
     width:100%;
-    height:100%;
-    border: dotted;
+    /* border: 1px dashed green; */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
-.flex-container {
+#footer {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    opacity: 100%;
+    background-color:powderblue;
+    font-size: 1rem;
     display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-    width: 10px;
-    height: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+#footer ul{
+    list-style: none;
+    padding:15px 15px;
+    margin: 0 0;
+    width: auto;
+    color: grey;
+    /* border: 1px dashed red; */
+    font-size: 1vw;
 }
 
-.flex-container > div {
-    background-color: blue;
-    width: 200px;
-    margin: 10px;
+#footer ul a {
+    text-decoration: none;
+    color: grey;
+}
+#footer ul li a:hover {
+    text-decoration: underline;
+    color:black;
+    transition: 0.7s;
+    
+}
+
+#footer li {
+    padding: 10px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    width: 10%;
-    height: 10%;
-    flex-shrink: 10;
+    width: auto;
+    /* padding: 10px; */
+    display:inline-block;
+    line-height: 20%;
+    /* border: 1px dashed blue; */
 }

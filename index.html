@@ -6,28 +6,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Song Rating App</title>
+    <title>RATE-MY-SONG</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Song Rating App Landing Page </h1>
-    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque mollitia nulla reiciendis quam. Facilis fugiat similique laudantium iste commodi in culpa neque nesciunt reiciendis. Recusandae laborum sed ducimus odio vero?</h2>
-    <iframe src="https://sebastianzimmeck.de/class/comp333/comp333.html#student_groups" frameborder="0">placeholder iframe</iframe>
     <div class="navbar">
+        <!-- <a href="/">
+            <img src="./src/IMG_9300.jpeg" alt="placeholder image">
+        </a> -->
         <ul>
-            <li>test</li>
-            <li>this</li>
-            <li>navbar</li>
-            <li><a href="./secondpage.html">second page</a></li>
+            <li><a href="index.html#home" id="logo" alt="home">HOME</a></li>
+            <li><a href="index.html#features" alt="features">FEATURES</a></li>
+            <li> <a href="index.html#faq" alt="faq">FAQ</a> </li>
+            <li><a href="index.html#footer">CONTACT US</a></li>
         </ul>
     </div>
-    <div class="flex-container">
-        <h3>flex container</h3>
-        <img src="./src/IMG_9300.jpeg" alt="placeholder image">
+
+    <scaffold id="home">  
+        <section>
+            <h1>RATE-MY-SONG: Just Rate It </h1>
+            <h3>WELCOME TO RATE-MY-SONG!</h3>
+            <p>The one and only place to rate songs! Join our team and 6 other people in our journey to revolutionize song ratings! From the hip to the hop, the R to the B, rate the music you enjoy and see what everyone else thinks of it too!</p>
+            <h3>FEATURES</h3>
+            <div id="features" class="flexcontainer">
+                <table>
+                    <tr>
+                        <th>
+                            Rate your favorite songs!
+                        </th>
+                        <th>
+                            Share with your friends!
+                        </th>
+                        <th>
+                            And Many More!
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Give your (or least favorite) songs ratings from a scale of 1 to 5</td>
+                                </tr>
+                                <tr>
+                                    <td>Add a description for how the songs made you feel deep deep down</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Let the world know what you are listening to and post your latest new song trends on social media!</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="socialMedia">
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank">
+                                                    <img id="sm" src="./src/fb.png" alt="facebook">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/" target="_blank">
+                                                    <img id="sm"src="./src/ig.png" alt="instagram">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/home" target="_blank">
+                                                    <img id="sm"src="./src/twt.png" alt="twitter">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/" target="_blank">
+                                                    <img id="sm"src="./src/gh.png" alt="github">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://wesmoodle.wesleyan.edu/my/" target="_blank">
+                                                    <img id="sm" src="./src/moodle.png" alt="wesmoodle">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>dive right in and discover all of our amazing features</td>
+                                </tr>
+                                <tr>
+                                    <td>more to come in 2023!</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h3>FAQ</h3>
+            <iframe id= "faq" src="./secondpage.html#faq" scrolling="no" frameborder="0"></iframe>
+        </section>
+    </scaffold>
+
+    <div id="footer">
+        <ul>
+            <li><a href="https://github.com/xynlophyl" target="_blank">CONTACT US</a></li>
+            <li><a href="https://sebastianzimmeck.de/class/comp333/comp333.html" target="_blank">COMP333</a></li>
+        </ul>
     </div>
-
-
-
 
 </body>
 </html>
