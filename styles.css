@@ -8,7 +8,7 @@ body {
     font-size: 12px;
 }
 
-/* scaffold: create center alignment for all elements */
+/* SCAFFOLD: create center alignment for all elements */
 
 scaffold {
     display: flex;
@@ -55,7 +55,7 @@ div {
 
 }
 
-/* navbar: */
+/* NAVBAR */
 .navbar {
     display:flex;
     justify-content: flex-end;
@@ -112,7 +112,7 @@ div {
     /* border: 1px dashed green; */
 }
 
-/* flex container:  */
+/* FLEX CONTAINER  */
 .flexcontainer {
     display: flex;
     flex-direction: row;
@@ -126,15 +126,6 @@ div {
     /* border: 1px dashed darkgreen; */
     padding-top: 2vh;
     padding-bottom: 2vh;
-}
-#faqcontainer {
-    height: auto;
-    /* padding: 2vh 2vw; */
-    align-items: flex-start;
-}
-
-#faq {
-    height: 50vh;
 }
 
 table {
@@ -186,6 +177,18 @@ iframe {
     padding-bottom: 5vh;
 }
 
+/* id attributes */
+#faqcontainer {
+    height: auto;
+    /* padding: 2vh 2vw; */
+    align-items: flex-start;
+}
+
+#faq {
+    height: 50vh;
+}
+
+/* FOOTER */
 #footer {
     width: 100%;
     height: auto;
